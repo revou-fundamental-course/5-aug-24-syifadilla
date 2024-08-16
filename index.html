@@ -1,12 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1 class="main-title"> Kalkulator BMI</h1>
+    </header>
+
+    <main>
+        <aside>
+        <articel>
+            <p>Body Mass Index (BMI) adalah metode hitung-hitungan mudah yang dapat memberikan informasi dasar terhadap masalah berat badan Anda secara keseluruhan. </p>
+        </articel>
+
+        <form>
+            <div>
+                <h3>Jenis Kelamin</h3>
+                <input type="radio" id="Laki-Laki" name="Jenis Kelamin" value="Laki-Laki"><label for="Laki-Laki">Laki-Laki</label>
+                <input type="radio" id="Perempuan" name="Jenis kelamin" value="Perempuan"><label for="Perempuan">Perempuan</label>
+            </div>
+
+            <div>
+                <h3>Berat Badan (kg)</h3>
+                <input type="number" id="input-weight">
+                <h3>Usia (Tahun)</h3>
+                <input type="number">
+                <h3>Tinggi Badan (cm)</h3>
+                <input type="number" id="input-Height">
+            </div>
+
+            <div class="form-btn-container">
+                <button class="button bg-cornsilk" type="button" onclick="formValidate()">Hitung BMI</button>
+                <button class="button bg-reset">Reset</button>
+            </div>
+        </form>
+
+        <article>
+            <header>
+                <h2>Form Information</h2>
+            </header>
+
+            <p>
+                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+
+
+                Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M2.
+            </p>
+        </article>
+        </aside>
+
+        <aside>
+
+        <section>
+        
+            <article class="right-article">
+                <h2>Hasil</h2>
+                <div id="bmi result" class="result-box">
+                    <h3>Hasil Hitung BMI</h3>
+                    <p class="bmi-value" style="background-color: aliceblue">--</p>
+                    <p class="'bmi-category">Hasil BMI akan di tampilkan di sini setelah Anda menghitung. Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan olahraga.
+                        jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga badan normal.</p>
+                    <button id="downloadResult" style="display:none;">Download Hasil BMI</button>
+                </div>
+
+                <div class="'bmi-sumary" id="bmisummary"></div>
+
+                    <div class="action-buttons">
+                        <button onclick="window.location. href='#';">Konsultasi Ahli Gizi via Aplikasi</button>
+                        <button>Registrasi Online Ahli Gizi</button>
+                        <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang
+                        Anda perlu konsultasi lebih lanjut mengenai resiko dari kekhawatiran Anda terkait denganberat badan Anda</p>
+                    </div>
+
+                    <article class="result-details" style="background-color: aliceblue">
+                        <h2>Beberapa penyakit yang berasal dari kegemukan</h2>
+                        <ul>
+                            <li>Diabetes</li>
+                            <li>Hipertensi</li>
+                            <li>Sakit jantung</li>
+                            <li>Osteoartritis</li>
+                        </ul>
+                        <button oncklick="window.location. href='#';">Konsultasi Dokter via Aplikasi</button>
+                        <button onclick="window.location. href='#';">Registrasi Online sekarang</button>
+
+                    </article>
+
+            </article>
+        </section>
+       
+        </aside>
+    </main>
+    <footer>
+        <p>Made by Syifa</p>
+    </footer>
+
+    <script src="js\script.js"></script>
 </body>
+
 </html>

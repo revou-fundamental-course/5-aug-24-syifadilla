@@ -1,1 +1,54 @@
 /* Ini CSS */
+
+.main-title{
+    text-align: center;
+}
+main {
+    display: flex; 
+}
+form {
+    padding: 8px;
+    background-color: azure;
+}
+
+aside {
+    padding: 48px;
+}
+
+.button{
+    height: 32px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.form-btn-container{
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.bg-cornsilk{
+    background-color: lightblue
+}
+
+.bg-reset{
+    background-color: lightgray
+}
+
+footer{
+    text-align: center;
+}
+
+form {
+    padding: 8px;
+    background-color: azure;
+}
+
+form{
+    background-color: aliceblue
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+}
